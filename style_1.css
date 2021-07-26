@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    color: #F4F4F9;
+}
+
+h2 {
+    margin: 12px;
+}
+
+#main_container {
+    width:  1270px;
+    height: 720px;
+
+    padding: 0;
+    margin: auto;
+    background-color: #f30707;
+}
+
+#back_box {
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 400px;
+    height:  70px;
+    background-color: #122191;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 0px 10px 5px #00000038;
+    float: left;
+
+
+    position: relative;
+    animation-name: wipe_in;
+    animation-duration: 1.3s;
+}
+
+@keyframes wipe_in {
+    0% {left: -20%; width: 140px;}
+    100% {left: 0%; width: 400px;}
+}
+
+#t1_logo img {
+    margin: 0;
+    height: 70px;
+    float: left;
+    border-radius: 0 0 0 10px;
+}
+
+#t2_logo img {
+    margin: 0;
+    height: 70px;
+    float: right;
+    border-radius: 0 0 10px 0;
+}
+
+#score {
+    margin: auto;
+    width: 120px;
+    height: 0;
+    background-color: #0E175A;
+    margin-top: 30px;
+    border-radius: 0 0 10px 10px;
+    
+
+    position: relative;
+    animation: forwards;
+    animation-name: score_in;
+    animation-duration: 0.5s;
+    animation-delay: 1.3s;
+}
+
+#clock p {
+    margin: 0 35px;
+    font-size: 15pt;
+    opacity: 0;
+
+    position: relative;
+    animation: forwards;
+    animation-name: text_in;
+    animation-duration: 0.5s;
+    animation-delay: 1.3s;
+}
+
+@keyframes score_in {
+    0% {height: 0;}
+    100% {height: 25px;}
+}
+
+@keyframes text_in {
+    0% {opacity: 0%; top: -20px;}
+    100% {opacity: 100%; top: 0;}
+}
+
+#names h2{
+    text-align: center;
+    opacity: 0%;
+    
+    position: relative;
+    animation: forwards;
+    animation-name: text_in;
+    animation-duration: 0.5s;
+    animation-delay: 1.3s;
+
+}
